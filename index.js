@@ -5,34 +5,30 @@ import  model  from './model.js';//模型对象
 
 //场景
 const scene = new THREE.Scene();
-scene
 scene.add(model); //模型对象添加到场景中
 
 
 
 
 //光源设置
-const directionalLight1 = new THREE.DirectionalLight(0xffffff, 2.5);
+const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1.3);
 directionalLight1.position.set(400, 200, 300);
 scene.add(directionalLight1);
-const directionalLight2 = new THREE.DirectionalLight(0xffffff, 2.5);
-directionalLight2.position.set(-400, -200, -300);
-scene.add(directionalLight2);
-const ambient = new THREE.AmbientLight(0xffffff, 0.4);
+const ambient = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambient);
 
 
 //渲染器和相机
 const width = window.innerWidth;
 const height = window.innerHeight;
-const camera = new THREE.PerspectiveCamera(30, width / height, 1, 3000);
-camera.position.set(0, 10, 7);
+const camera = new THREE.PerspectiveCamera(3, width / height, 1, 100);
+camera.position.set(0, 4, 2);
 camera.lookAt(0, 0, 0);
 
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(width, height);
-renderer.setClearColor(0xffffff, 1)
+renderer.setClearColor(0xcccccc, 1)
 document.body.appendChild(renderer.domElement);
 
 // 渲染循环
