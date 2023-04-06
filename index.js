@@ -13,7 +13,7 @@ scene.add(model); //模型对象添加到场景中
 //光源设置
 const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.6);
 directionalLight1.position.set(0, 0, 300);
-const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.6);
+const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.4);
 directionalLight2.position.set(0, 0, -300);
 const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.4);
 directionalLight3.position.set(-400, -200, 300);
