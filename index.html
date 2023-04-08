@@ -45,7 +45,7 @@
             document.body.appendChild(container);
 
             camera = new THREE.PerspectiveCamera(4, window.innerWidth / window.innerHeight, 0.25, 20);
-            camera.position.set(0, 2.5, 2.8);
+            camera.position.set(0, 5, 5.6);
 
             scene = new THREE.Scene();
 
@@ -83,7 +83,7 @@
             const controls = new OrbitControls(camera, renderer.domElement);
             controls.addEventListener('change', render); // use if there is no animation loop
             controls.minDistance = 1.5;
-            controls.maxDistance = 6;
+            controls.maxDistance = 12;
             controls.target.set(0, 0, 0);
             controls.update();
 
