@@ -18,11 +18,11 @@ const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.02);
 directionalLight2.position.set(0, -800, -500);
 const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.001);
 directionalLight3.position.set(0, -10000,0);
+const ambient = new THREE.AmbientLight(0xffffff, 1);
+scene.add(ambient);
 scene.add(directionalLight1);
 scene.add(directionalLight2);
 scene.add(directionalLight3);
-const ambient = new THREE.AmbientLight(0xffffff, 1);
-scene.add(ambient);
 
 
 //渲染器和相机
