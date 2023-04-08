@@ -11,13 +11,13 @@ scene.add(model); //模型对象添加到场景中
 
 
 //光源设置
-const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.6);
+const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.2);
 directionalLight1.position.set(0, 0, 300);
-const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.4);
+const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.2);
 directionalLight2.position.set(0, 0, -300);
-const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.4);
+const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.2);
 directionalLight3.position.set(-400, -200, 300);
-const directionalLight4 = new THREE.DirectionalLight(0xffffff, 0.4);
+const directionalLight4 = new THREE.DirectionalLight(0xffffff, 0.2);
 directionalLight4.position.set(-400, 200, 300);
 scene.add(directionalLight1);
 scene.add(directionalLight2);
@@ -37,7 +37,7 @@ camera.lookAt(0, 0, 0);
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(width, height);
-renderer.setClearColor(0xcccccc, 1)
+renderer.setClearColor(0x1E2025, 1)
 document.body.appendChild(renderer.domElement);
 
 // 渲染循环
